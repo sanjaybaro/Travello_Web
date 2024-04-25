@@ -1,9 +1,10 @@
 import "./App.css";
+import Layout from "./Components/Layout/Layout";
 
 function App() {
   return (
     <>
-      <h1>Travello Website</h1>
+      <Layout/>
     </>
   );
 }
