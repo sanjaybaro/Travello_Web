@@ -33,4 +33,5 @@
   background: var(--secondary-color);
   color: #fff;
   border-radius: 10px 5px 10px 5px;
+  cursor: pointer;
 }
