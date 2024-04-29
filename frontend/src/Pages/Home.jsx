@@ -6,10 +6,12 @@ import heroImg from "../assets/images/hero-img01.jpg";
 import heroImg02 from "../assets/images/hero-img02.jpg";
 import heroVideo from "../assets/images/hero-video.mp4";
 import worldImg from "../assets/images/world.png";
+import experienceImg from "../assets/images/experience.png";
 import Subtitle from "../Shared/Subtitle";
 import SearchBar from "../Shared/SearchBar";
 import ServiceList from "../services/ServiceList";
 import FeaturedTourList from "../Components/Featured-tours/FeaturedTourList";
+import MasonryImagesGallery from "../Components/Image-gallery/MasonryImagesGallery";
 
 const Home = () => {
   return (
@@ -101,14 +103,45 @@ const Home = () => {
               </div>
               <div className="counter__wrapper d-flex align-items-center gap-5">
                 <div className="counter__box">
-                  <span></span>
+                  <span>12k+</span>
+                  <h6>Successful trip</h6>
                 </div>
+                <div className="counter__box">
+                  <span>2k+</span>
+                  <h6>Regular clients</h6>
+                </div>
+                <div className="counter__box">
+                  <span>15</span>
+                  <h6>Years experience</h6>
+                </div>
+              </div>
+            </Col>
+            <Col>
+              <div className="experience__img">
+                <img src={experienceImg} alt="" />
               </div>
             </Col>
           </Row>
         </Container>
       </section>
       {/* ----------------experience section end------------- */}
+
+      {/* ---------------gallery section start---------------- */}
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12">
+              <Subtitle subtitle={"Gallery"} />
+              <h2 className="gallery__title">
+                Visit our customers tour gallery
+              </h2>
+            </Col>
+            <Col lg="12">
+              <MasonryImagesGallery/>
+            </Col>
+          </Row>
+        </Container>
+      </section>
     </>
   );
 };
