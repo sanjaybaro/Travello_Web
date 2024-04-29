@@ -76,12 +76,39 @@ const Home = () => {
               <Subtitle subtitle={"Explore"} />
               <h2 className="featured__tour-title">Our featured tours</h2>
             </Col>
-            <FeaturedTourList/>
+            <FeaturedTourList />
           </Row>
         </Container>
       </section>
 
       {/* --------------feture tour section end--------------- */}
+
+      {/* ----------------experience section start------------- */}
+      <section>
+        <Container>
+          <Row>
+            <Col lg="6">
+              <div className="experience__content">
+                <Subtitle subtitle={"Experience"} />
+                <h2>
+                  With our all experience <br /> we will serve you
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <br />
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+              </div>
+              <div className="counter__wrapper d-flex align-items-center gap-5">
+                <div className="counter__box">
+                  <span></span>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      {/* ----------------experience section end------------- */}
     </>
   );
 };
